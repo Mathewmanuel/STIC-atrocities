@@ -1,0 +1,10 @@
+from caroop import car
+car1=car("slavia","Slavia","2020",False)
+print(car1.model)
+car2=car("Hyundai","Verna","2022",True)
+car3=car("MG","Hector","2018",False)
+car1.drive()
+car2.stop()
+car3.describe()
+print(car.wheels)
+print(car.noofcars)
