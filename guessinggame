@@ -1,0 +1,21 @@
+import random
+lowestnum=1
+highestnum=100
+answer=random.randint(lowestnum,highestnum)
+guesses=0
+guessc=1
+isrunning =True
+
+while isrunning:
+    guess=input("enter your number")
+    if answer>100 or answer<1:
+        print("the value is invalid")
+        print("enter another input")
+        guess=input("Enter your choice")
+        guessc+=1
+    if guess>answer:
+        print('the value is too high')
+    elif guess<answer:
+        print("the given guess is too low")
+    else:
+        print("congratulations the correct answer is{answer} it took you{}trys")
